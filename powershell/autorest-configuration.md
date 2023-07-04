@@ -33,7 +33,7 @@ pipeline-model: v3
 ``` yaml
 module-version: 0.1.0
 skip-model-cmdlets: false
-help-link-prefix: https://docs.microsoft.com/en-us/powershell/module/
+help-link-prefix: https://learn.microsoft.com/powershell/module/
 metadata:
   authors: ''
   owners: ''
@@ -74,6 +74,7 @@ docs-folder: $(current-folder)/docs
 dependency-module-folder: $(module-folder)/modules
 examples-folder: $(current-folder)/examples
 resources-folder: $(current-folder)/resources
+ux-folder: $(current-folder)/UX
 ```
 
 > File Paths

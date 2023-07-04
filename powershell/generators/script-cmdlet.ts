@@ -112,7 +112,7 @@ ${command.link || ''}
 [Alias('AzureRMContext', 'AzureCredential')]
 [ValidateNotNull()]
 [System.Management.Automation.PSObject]
-# The credentials, account, tenant, and subscription used for communication with Azure.
+# The DefaultProfile parameter is not functional. Use the SubscriptionId parameter when available if executing the cmdlet against a different subscription.
 $\{DefaultProfile\},`);
           yield '';
         }
@@ -198,7 +198,7 @@ $\{ProxyUseDefaultCredentials\}
   .Description
   Export data from the redis cache to blobs in a container.
   .Link
-  https://docs.microsoft.com/powershell/module/az.redis/export-azredisredisdata
+  https://learn.microsoft.com/powershell/module/az.redis/export-azredisredisdata
   #>
   function Export-AzRedisRedisData {
   [OutputType('System.Boolean')]
@@ -253,7 +253,7 @@ $\{ProxyUseDefaultCredentials\}
       [Alias('AzureRMContext', 'AzureCredential')]
       [ValidateNotNull()]
       [System.Management.Automation.PSObject]
-      # The credentials, account, tenant, and subscription used for communication with Azure.
+      # The DefaultProfile parameter is not functional. Use the SubscriptionId parameter when available if executing the cmdlet against a different subscription.
       ${DefaultProfile},
   
       [Parameter()]
